@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cookie popup</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<main>
+		<a href="#" class="del">DELETE COOKIE</a>
+	</main>
+
+	<aside class="popup" id="pop1">
+		<div class="content"></div>
+		<p class="wrap">
+			<input id="ck" type="checkbox">
+			<label for="ck">오늘하루 그만보기</label>
+		</p>
+		<a href="#" class="close">CLOSE</a>
+		
+	</aside>
+	<!-- <script defer src="./js/cookie_popup.js"></script> -->
+	<!-- defer 는 브라우저가 로딩될 때 까지 기다리는거  -->
+
+	<script defer src="./js/prototype.js"></script>
+	<script>
+
+		window.onload = function(){
+			new CookiePop('#pop1', {
+				// btn: '.close',
+				// expireDays: 1,
+				speed: 0,
+			});
+			// new CookiePop('#pop1')
+		}
+
+	</script>
+
+</body>
+</html>

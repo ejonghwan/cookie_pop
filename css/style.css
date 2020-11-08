@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* reset.css */
+* {margin:0px; padding:0px;}
+ul,ol,li {list-style:none;}
+a {text-decoration:none; }
+
+
+main {
+     width:100%; padding:100px; box-sizing:border-box;
+    }
+.del {
+    display:block; width:200px; height:40px; font:bold 14px/40px 'arial'; color:#fff; 
+    text-align:center; background:linear-gradient(45deg,#e402d9, #ff57b9);  border-radius:20px;
+    box-shadow:5px 5px 10px rgba(228, 0, 163, 0.4);   transition:0.5s; opacity:0.8;
+}
+.del:hover {
+    text-shadow:0px 0px 10px #fff; opacity:1; box-shadow:10px 10px 20px rgba(228, 0, 163, 0.5);
+}
+
+aside {
+    width:500px; background:linear-gradient(45deg,#e402d9, #ff57b9); border-radius:14px; 
+    box-shadow:10px 10px 20px rgba(228, 0, 163, 0.4); 
+    position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+    box-sizing:border-box; padding:40px;
+    display: none;
+}
+aside .content {
+    width:100%; min-height:160px;
+}
+aside .wrap {
+    float:left;
+}
+aside .wrap::after {
+    content:""; display:block; clear:both;
+}
+aside .wrap label {
+   font:bold 14px/1 "맑은 고딕";  color:#fff;  margin-left:4px;
+}
+aside .close {
+    font:bold 14px/1 '맑은 고딕'; color:#fff; float:right;
+}
+
+
+
+
+
+
+
+
+
